@@ -4,6 +4,7 @@
 * David Camilo Valbuena
 * Carlos Fernando Quintero Castillo
 ## Introducción 
+En esta laboratorio nos introducimos a la infraestrucutra del software ROS 2, utilizando el entorno de simulación incorporado de Turtlesim en donde abarcaremos las bases de control de movimiento y exploraremos conceptos fundamentales como la publicación de mensajes, la creación de nodos, y el uso de servicios en un entorno distribuido. Además, implementaremos funcionalidades interactivas para el control de la tortuga, aplicando comandos personalizados para generar trayectorias específicas y dibujar figuras en el simulador.
 ## Control de movimiento manual
 ## Dibujo automático de letras personalizadas
 
