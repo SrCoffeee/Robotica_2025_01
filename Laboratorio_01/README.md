@@ -343,3 +343,6 @@ Aquí mostraremos los ejemplos realizados a partir de ls nombres
 ![david](Imagenes/david.png)
 - Carlos Fernando Quintero Castillo
 ![carlos](Imagenes/carlos.png)
+
+## Video explicativo
+Para un mayor detalle de lo realizado, se puede ver el video de la implementación [aquí](https://youtu.be/TPda3zQ4p9Y)
