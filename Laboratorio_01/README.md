@@ -18,7 +18,9 @@ Para este proceso vamos a partir del script puesto a disposición como primer ej
 ![flujo1](/Imagenes/diagrama_flujo_p2.png)
 ![flujo1](/Imagenes/diagrama_flujo_p3.png)
 
-</center>### Código
+</center>
+
+### Código
 
 
 #### Importamos las bibliotecas necesarias para ROS2, mensajes y servicios
