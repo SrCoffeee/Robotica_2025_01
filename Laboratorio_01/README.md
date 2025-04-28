@@ -336,3 +336,10 @@ colcon build
 source install/setup.bash
 ros2 run my_turtle_controller move_turtle
 ```
+#### Visualización 
+Aquí mostraremos los ejemplos realizados a partir de ls nombres 
+
+- David Camilo Valbuena Molano
+![david](Imagenes/david.png)
+- Carlos Fernando Quintero Castillo
+![carlos](Imagenes/carlos.png)
