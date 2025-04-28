@@ -99,13 +99,13 @@ Para este proceso vamos a partir del script puesto a disposición como primer ej
 > Teniendo en cuenta nuestros nombres completos, se tiene que las letras a dibujar son D, C, V, M, F y Q
 
 ### Diagrama de flujo
-<center>
+<div align="center">
 
 ![flujo1](Imagenes/diagrama_flujo_p1.png)
 ![flujo1](Imagenes/diagrama_flujo_p2.png)
 ![flujo1](Imagenes/diagrama_flujo_p3.png)
 
-</center>
+</div>
 
 ### Código
 
@@ -319,9 +319,11 @@ if __name__ == '__main__':
 Para ello nos vamos a emplear la terminal del software *Terminator*, en donde vamos a abrir dos pestañas; una será la encargada de la visualización y la otra del control del simulador Turtlesim
 
 Al ya tenerlo instalado, vamos a proceder en una de las terminales, a ejecutar el simulador Turtlesim mediante el comando *ros2 run turtlesim turtlesim_node*, mostrando una ventana como la mostrada a continuación:
-
+<div align="center">
+    
 ![turtle_sim](Imagenes/turtlesim.png)
 
+</div>
 Para el control de la turtuga es importante tener creado un nodo que nos permita darle las ordenes de movimiento, para ello lo haremos ejecutando los siguientes comandos:
 ```
 cd ~/ros2_ws/src
@@ -341,9 +343,18 @@ ros2 run my_turtle_controller move_turtle
 Aquí mostraremos los ejemplos realizados a partir de ls nombres 
 
 - David Camilo Valbuena Molano
+<div align="center">
+    
 ![david](Imagenes/david.png)
+
+</div>
+
 - Carlos Fernando Quintero Castillo
+<div align="center">
+    
 ![carlos](Imagenes/carlos.png)
+
+</div>
 
 ## Video explicativo
 Para un mayor detalle de lo realizado, se puede ver el video de la implementación [aquí](https://youtu.be/TPda3zQ4p9Y)
