@@ -6,6 +6,8 @@
 ## Introducción 
 En esta laboratorio nos introducimos a la infraestrucutra del software ROS 2, utilizando el entorno de simulación incorporado de Turtlesim en donde abarcaremos las bases de control de movimiento y exploraremos conceptos fundamentales como la publicación de mensajes, la creación de nodos, y el uso de servicios en un entorno distribuido. Además, implementaremos funcionalidades interactivas para el control de la tortuga, aplicando comandos personalizados para generar trayectorias específicas y dibujar figuras en el simulador.
 ## Control de movimiento manual
+
+#### Importar Librerías
 ```
 # Importa la librería principal de ROS 2 para Python
 import rclpy
@@ -17,7 +19,9 @@ from geometry_msgs.msg import Twist
 import sys
 import tty
 import termios
-
+```
+#### Función auxiliar para capturar una tecla
+```
 def get_key():
     """Función para capturar una tecla del teclado sin esperar Enter."""
     fd = sys.stdin.fileno()  # Obtiene el descriptor de archivo estándar de entrada
@@ -28,7 +32,10 @@ def get_key():
     finally:
         termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)  # Restaura configuración original
     return key  # Retorna la tecla presionada
+```
+####  Definición de la clase TurtleMover (Nodo principal)
 
+```
 class TurtleMover(Node):
     """Clase para mover la tortuga usando las flechas del teclado."""
     def __init__(self):
@@ -37,7 +44,10 @@ class TurtleMover(Node):
         self.publisher_ = self.create_publisher(Twist, '/turtle1/cmd_vel', 10)
         # Crea un temporizador que llama a 'control_loop' cada 0.1 segundos
         self.timer = self.create_timer(0.1, self.control_loop)
+```
 
+####  Bucle de control que mueve la tortuga (control_loop)
+```
     def control_loop(self):
         """Función que se ejecuta repetidamente para leer teclas y mover la tortuga."""
         key = get_key()  # Captura una tecla presionada
@@ -63,7 +73,10 @@ class TurtleMover(Node):
                 msg.angular.z = 1.5708  # Giro en sentido antihorario (izquierda)
 
         self.publisher_.publish(msg)  # Publica el mensaje para mover la tortuga
+```
+#### Función principal para lanzar el nodo
 
+```
 def main(args=None):
     """Función principal para iniciar el nodo."""
     rclpy.init(args=args)  # Inicializa la comunicación con ROS 2
@@ -71,11 +84,12 @@ def main(args=None):
     rclpy.spin(node)  # Mantiene el nodo corriendo
     node.destroy_node()  # Destruye el nodo al finalizar
     rclpy.shutdown()  # Apaga la comunicación de ROS 2
+```
 
-# Ejecuta la función principal si el archivo se ejecuta directamente
+#### Ejecuta la función principal si el archivo se ejecuta directamente
+```
 if __name__ == '__main__':
     main()
-
 ```
 ## Dibujo automático de letras personalizadas
 
