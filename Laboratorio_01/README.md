@@ -14,9 +14,9 @@ Para este proceso vamos a partir del script puesto a disposición como primer ej
 ### Diagrama de flujo
 <center>
 
-![flujo1](/Imagenes/diagrama_flujo_p1.png)
-![flujo1](/Imagenes/diagrama_flujo_p2.png)
-![flujo1](/Imagenes/diagrama_flujo_p3.png)
+![flujo1](Imagenes/diagrama_flujo_p1.png)
+![flujo1](Imagenes/diagrama_flujo_p2.png)
+![flujo1](Imagenes/diagrama_flujo_p3.png)
 
 </center>
 
