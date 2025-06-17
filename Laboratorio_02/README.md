@@ -6,6 +6,8 @@
 ---
 
 ## Introducción 
+Este laboratorio busca poner en práctica conceptos clave de la robótica industrial, como la programación de trayectorias, el diseño de herramientas y el uso de señales digitales. A través de la simulación de la decoración de una torta con un robot ABB IRB 140, se diseñaron movimientos personalizados, calibración de la herramienta y configuración entradas y salidas digitales, integrando así programación en RAPID con tareas reales de automatización.
+
 ## Herramienta de trabajo
 ## Plano de planta
 ## Descripción de la solución 
