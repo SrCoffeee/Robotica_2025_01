@@ -11,7 +11,7 @@ Este laboratorio busca poner en práctica conceptos clave de la robótica indust
 ## Herramienta de trabajo
 Se modeló la herramienta según las especificaciones del flanche en la guia de laboratorio 
 ![her1](/her1.png)
-
+![her2](/her2png)
 
 ## Plano de planta
 
