@@ -10,9 +10,12 @@ Este laboratorio busca poner en práctica conceptos clave de la robótica indust
 
 ## Herramienta de trabajo
 Se modeló la herramienta según las especificaciones del flanche en la guia de laboratorio, posteriormente se cargó al entorno de robot studio y se asigno al robot correspondiente el cual es el ABB IRB 140 se define que es una herramienta de trabajo y se procede a crear en robot studio aparece en la ventana de diseño que es un mecanismo en este caso de nombre porta
+<div align="center">
+ 
 ![her1](imagenes2/her1.png)
 ![her2](imagenes2/her2.png) 
 
+</div>
 El marco de referencia de la herramienta se modifica de tal forma que el eje z coincida con el ataque del marcador esto será especialmente útil al momento de realizar las trayectorias que nos permitirán definir nuestra decoración
 ![porta](imagenes2/porta.png)
 
@@ -45,10 +48,11 @@ Una vez importado a robot studio se proceden a hacer las trayectorias
 ## Diagrama de flujo de acciones del robot
 
 Una secuencia simple de las acciones del robot es el siguiente: 
+<div align="center">
 
 <img src="imagenes2/Secuencia_simple.png" alt="secuencia simple" width="400">
 
-
+</div>
 
 ## Código en RAPID
 
