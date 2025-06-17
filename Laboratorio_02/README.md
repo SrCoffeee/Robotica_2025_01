@@ -53,3 +53,6 @@ Una secuencia simple de las acciones del robot es el siguiente:
 ## Código en RAPID
 
 Para este apartado se puede encontrar el código utilizado en la carpeta *"Códigos"*.
+
+## Video explicativo
+Para un mayor detalle de lo realizado, se puede ver el video de la implementación tanto simulada como física [aquí](https://youtu.be/SD21q73Zi-A)
