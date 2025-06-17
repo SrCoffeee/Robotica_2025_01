@@ -43,7 +43,7 @@ Una vez importado a robot studio se proceden a haecr las trayectorias
 
 Una secuencia simple de las acciones del robot es el siguiente: 
 
-![secuencia simple](/secuencia simple.png)
+![secuencia simple](/Secuencia simple.png)
 
 
 ## Código en RAPID
