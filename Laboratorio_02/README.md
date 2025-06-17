@@ -43,6 +43,8 @@ Una vez importado el modelo a **RobotStudio**, se definió un **WorkObject**. Au
 
 Posteriormente, se seleccionaron los puntos que conforman las trayectorias correspondientes a las **letras** y la **decoración** del diseño.
 
+![sc](imagenes2/sc.png)
+
 ### Programación en RAPID
 
 En el lenguaje **RAPID**, se trabaja principalmente con tres instrucciones para el diseño de trayectorias:
@@ -52,7 +54,6 @@ En el lenguaje **RAPID**, se trabaja principalmente con tres instrucciones para 
 - `MoveC`: para trayectorias **curvas** entre dos puntos, pasando por un punto intermedio.
 
 Para este proyecto, se usaron principalmente los comandos `MoveJ` y `MoveC`, con el objetivo de lograr trayectorias suaves y controladas en los distintos segmentos del diseño. El detalle de estos movimientos puede observarse con mayor claridad en el código RAPID generado.
-
 
 
 
