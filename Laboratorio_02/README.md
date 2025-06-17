@@ -33,7 +33,7 @@ En primera instancia se modela un solido de dimensiones Ancho 160mm, Largo 235mm
 ![deco](/deco.png)
 
 
-Una vez importado a robot studio se define como el work object (aunque en realidad el work object es el plano sobre el que se ejecutan las trayectorias) y se seleccionan los puntos para hacer cada trayectoria en RAPID hay 3 comandos principales para el sieño de trayectorias estos son MOVEL. MOVEJ, MOVEC   
+Una vez importado a robot studio se define como el work object (aunque en realidad el work object es el plano sobre el que se ejecutan las trayectorias) y se seleccionan los puntos para hacer cada trayectoria en RAPID hay 3 comandos principales para el sieño de trayectorias estos son MOVEL. MOVEJ, MOVEC el primero sirve para hacer trayectorias lineales, el segundo para ir a un punto en especifico y el tercero para hacer trayectorias curvas  
  
 
 
