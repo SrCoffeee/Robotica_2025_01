@@ -46,7 +46,7 @@ Una vez importado a robot studio se proceden a haecr las trayectorias
 
 Una secuencia simple de las acciones del robot es el siguiente: 
 
-<img src="/Secuencia_simple.png" alt="secuencia simple" width="400">
+<img src="imagenes2/Secuencia_simple.png" alt="secuencia simple" width="400">
 
 
 
