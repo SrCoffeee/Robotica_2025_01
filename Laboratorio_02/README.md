@@ -34,9 +34,25 @@ En primera instancia se modela un solido de dimensiones Ancho 160mm, Largo 235mm
 ![deco](imagenes2/deco.png)
 
 
-Una vez importado a robot studio se define como el work object (aunque en realidad el work object es el plano sobre el que se ejecutan las trayectorias) y se seleccionan los puntos para hacer cada trayectoria (letras y decoración), en RAPID hay 3 comandos principales para el sieño de trayectorias estos son MOVEL. MOVEJ, MOVEC el primero sirve para hacer trayectorias lineales, el segundo para ir a un punto en especifico y el tercero para hacer trayectorias curvas, se usaron principalmente el MOVEJ y el MOVEC para los movimientos de las trayectorias, se puede ver más claramente en el código de RAPID. 
+En este proyecto se utilizaron **tres Smart Components**:
 
-Se configuran los smart components que le darán movimiento a la banda y ejecutaran la siguiente secuencia de la estación “Inicio” → “Activar movimiento de la banda” → “Parar cuando detecte el objeto de trabajo” → “Ejecutar decorado” → “Volver a home” → “Activar banda” → "Llegar al otro extremo de la banda"→  “Fin”. Esto se ve mejor detallado en el vídeo correspondiente
+- Uno para representar el **movimiento lineal**.  
+- Dos para representar **planos de sensor**, los cuales funcionarán como **puntos de parada** o referencia durante la ejecución de las trayectorias.
+
+Una vez importado el modelo a **RobotStudio**, se definió un **WorkObject**. Aunque técnicamente el **WorkObject** representa el plano sobre el cual se ejecutan las trayectorias, en este caso se tomó como referencia uno de los planos definidos por los sensores.
+
+Posteriormente, se seleccionaron los puntos que conforman las trayectorias correspondientes a las **letras** y la **decoración** del diseño.
+
+### Programación en RAPID
+
+En el lenguaje **RAPID**, se trabaja principalmente con tres instrucciones para el diseño de trayectorias:
+
+- `MoveL`: para trayectorias **lineales**.  
+- `MoveJ`: para movimientos **directos** a un punto específico con interpolación conjunta.  
+- `MoveC`: para trayectorias **curvas** entre dos puntos, pasando por un punto intermedio.
+
+Para este proyecto, se usaron principalmente los comandos `MoveJ` y `MoveC`, con el objetivo de lograr trayectorias suaves y controladas en los distintos segmentos del diseño. El detalle de estos movimientos puede observarse con mayor claridad en el código RAPID generado.
+
 
 
 
