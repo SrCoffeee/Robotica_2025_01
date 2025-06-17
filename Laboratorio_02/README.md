@@ -20,6 +20,9 @@ El marco de referencia de la herramienta se modifica de tal forma que el eje z c
 
 
 ## Plano de planta
+Se adjunta una vista de planta de la estación en la cual se visualiza el robot, la banda transportadora y el objeto de trabajo en el que se va a hacer el decorado 
+![planoplanta](/planoplanta.png)
+
 
 
 
