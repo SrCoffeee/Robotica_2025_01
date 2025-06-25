@@ -13,3 +13,7 @@
 ## Código en RAPID
 
 Para este apartado se puede encontrar el código utilizado en la carpeta *"Códigos"*.
+
+## Video explicativo
+
+Para ver la simulación realizada en RobotStudio junto con la implemetación práctica, se puede acceder al video por medio del siguiente [enlace](link)
