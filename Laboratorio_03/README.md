@@ -23,13 +23,16 @@ Los manipuladores industriales son brazos robóticos articulados diseñados para
 | Controlador | DX100 | IRC5 |
 | Aplicaciones típicas         | Pick & place de componentes ligeros, embalaje, inspección | Montajes de ensamblaje pequeños, pick & place, handling, Drawing          |
 
-**Observaciones**  
-- Aunque ambos comparten 6 kg de carga, el IRB 140 ofrece mayor alcance y velocidad lineal, a costa de un peso mucho mayor.  
-- El MH6 es más compacto y ligero, ideal en estaciones de mesas de trabajo con limitación de espacio.
+> [!NOTE] 
+> - Aunque ambos comparten 6 kg de carga, el IRB 140 ofrece mayor alcance y velocidad lineal, a costa de un peso mucho mayor.
+> - El MH6 es más compacto y ligero, ideal en estaciones de mesas de trabajo con limitación de espacio.  
 
 ---
 
 ##  Descripción de las configuraciones home1 y home2
+
+El Motoman MH6 tiene dos posiciones iniciales de referencia definidas: Home1 (Home Position) y Home2 (Second Home).
+
 
 
 ## Control Manual del Manipulador: Movimiento Articular y Cartesiano
