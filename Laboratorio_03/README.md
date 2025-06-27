@@ -10,7 +10,25 @@ Los manipuladores industriales son brazos robóticos articulados diseñados para
 
 ## Comparación técnica entre el Motoman MH6 y el IRB140
 
+
+| Característica               | Motoman MH6                          | ABB IRB 140                         |
+|------------------------------|--------------------------------------|-------------------------------------|
+| Carga máxima                 | 6 kg                                 | 6 kg                                |
+| Alcance máximo               | 726 mm                               | 820 mm                              |
+| Grados de libertad (DoF)     | 8 ejes                               | 6 ejes                              |
+| Velocidad máxima lineal      | 1 500 mm/s                           | 2 000 mm/s                          |
+| Repetibilidad                | ± 0,02 mm                            | ± 0,03 mm                           |
+| Peso del manipulador         | 45 kg                                | 105 kg                              |
+| Volumen del espacio de trabajo | Cilíndrico de Ø 1 450 mm y altura 1 100 mm | Cilíndrico de Ø 1 640 mm y altura 1 600 mm |
+| Aplicaciones típicas         | Pick & place de componentes ligeros, embalaje, inspección | Montajes de ensamblaje pequeños, pick & place, handling, Drawing          |
+
+**Observaciones**  
+- Aunque ambos comparten 6 kg de carga, el IRB 140 ofrece mayor alcance y velocidad lineal, a costa de un peso mucho mayor.  
+- El MH6 es más compacto y ligero, ideal en estaciones de mesas de trabajo con limitación de espacio.
+  
 ##  Descripción de las configuraciones home1 y home2
+
+
 
 ## Control Manual del Manipulador: Movimiento Articular y Cartesiano
 
