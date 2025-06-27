@@ -81,8 +81,24 @@ El **DX100 Teach Pendant** del MH6 permite mover el robot manualmente en diferen
 
 </div>
 El control **DX100 del MH6** permite ajustar la velocidad manual en que se mueven los ejes. Hay 3 niveles definidos: Low (bajo), Medium (medio) y High (alto). Estos niveles se seleccionan con las teclas de velocidad en el teach pendant (etiquetadas como SLOW, FAST y High Spped). El operador puede, por ejemplo, presionar “FAST” para aumentar un nivel o “SLOW” para disminuirlo.
-## Descripción de las principales funcionalidades de RoboDK,
 
+## Descripción de las principales funcionalidades de RoboDK
+
+RoboDK es un software de simulación y programación offline de robots muy utilizado. Entre sus principales funcionalidades se incluyen:
+
+- **Programación Offline**  
+  - Importa modelos CAD (STEP, IGES) y crea trayectorias sin interrumpir la producción.  
+- **Simulación 3D**  
+  - Visualiza el movimiento del robot en entorno virtual, detecta colisiones y valida alcances.  
+- **Post-procesadores**  
+  - Genera código específico para controladores de distintos fabricantes (Yaskawa, ABB, Fanuc…).  
+- **Calibración y Escaneo**  
+  - Permite calibrar robots y herramientas usando protocolos estándar (TCP, WObj).  
+- **API y Automatización**  
+  - Scripting en Python para personalizar rutinas, loops, condiciones y conectarse a PLCs o bases de datos.  
+- **Integración CAM/CAD**  
+  - Conecta camadas de mecanizado (mill, laser, corte por chorro) directamente con el robot.  
+  
 ## Análisis comparativo entre RoboDK y RobotStudio
 
 ## Código en Python
