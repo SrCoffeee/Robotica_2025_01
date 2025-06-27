@@ -82,6 +82,8 @@ El **DX100 Teach Pendant** del MH6 permite mover el robot manualmente en diferen
 </div>
 El control **DX100 del MH6** permite ajustar la velocidad manual en que se mueven los ejes. Hay 3 niveles definidos: Low (bajo), Medium (medio) y High (alto). Estos niveles se seleccionan con las teclas de velocidad en el teach pendant (etiquetadas como SLOW, FAST y High Spped). El operador puede, por ejemplo, presionar “FAST” para aumentar un nivel o “SLOW” para disminuirlo.
 
+---
+
 ## Descripción de las principales funcionalidades de RoboDK
 
 RoboDK es un software de simulación y programación offline de robots muy utilizado. Entre sus principales funcionalidades se incluyen:
@@ -98,9 +100,49 @@ RoboDK es un software de simulación y programación offline de robots muy utili
   - Scripting en Python para personalizar rutinas, loops, condiciones y conectarse a PLCs o bases de datos.  
 - **Integración CAM/CAD**  
   - Conecta camadas de mecanizado (mill, laser, corte por chorro) directamente con el robot.  
-  
+
+
+## Comunicación con el Manipulador Motoman
+
+**Protocolo de Comunicación:**
+
+- RoboDK establece comunicación con el manipulador Motoman mediante múltiples protocolos:
+
+- Ethernet/IP Industrial: Comunicación estándar para transferencia de programas y datos
+- Socket TCP/IP: Para control en tiempo real y monitoreo de estado
+- FTP: Transferencia de archivos de programa al controlador DX100
+- Modbus TCP: Para lectura/escritura de variables de proceso
+
+**Proceso de Ejecución de Movimientos:**
+
+- Generación de Trayectoria: RoboDK calcula la trayectoria óptima considerando restricciones cinemáticas y dinámicas
+- Conversión de Código: El programa se convierte al lenguaje nativo del controlador (INFORM para Motoman)
+- Validación Previa: Verificación de límites articulares y detección de singularidades
+- Transferencia: Envío del programa al controlador DX100 via red
+- Ejecución Controlada: Monitoreo en tiempo real del progreso y estado del robot
+- Retroalimentación: Recepción de datos de posición actual y estado de ejecución
+
+**Funciones Específicas para Motoman:**
+
+- Driver Motoman: Módulo especializado para comunicación con controladores DX100
+- Sincronización: Coordinación precisa entre simulación y robot físico
+- Manejo de Variables: Gestión de variables de proceso y señales I/O
+- Gestión de Programas: Administración remota de programas almacenados en el controlador
+
+---
 ## Análisis comparativo entre RoboDK y RobotStudio
 
+| Aspecto | RoboDK | RobotStudio |
+|---------|---------|-------------|
+| **Compatibilidad de Marcas** | Universal (250+ fabricantes) | Específico para ABB |
+| **Entorno de Desarrollo** | Multiplataforma (Windows, Mac, Linux) | Windows exclusivamente |
+| **Lenguajes de Programación** | Python, C++, MATLAB, LabVIEW | RAPID nativo |
+| **Simulación Física** | Avanzada con múltiples motores | Altamente optimizada para ABB |
+| **Costo de Licenciamiento** | Modelo por usuario/funcionalidad | Incluido con robots ABB |
+| **Curva de Aprendizaje** | Moderada, interfaz intuitiva | Empinada, altamente especializada |
+| **Capacidades de CAD** | Importación universal | Integración nativa con PowerPacs |
+
+---
 ## Código en Python
 
 Para este apartado se puede encontrar el código utilizado en la carpeta *"Códigos"*.
