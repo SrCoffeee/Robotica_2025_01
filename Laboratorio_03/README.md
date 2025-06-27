@@ -6,6 +6,7 @@
 ---
 
 ## Introducción 
+Los manipuladores industriales son brazos robóticos articulados diseñados para automatizar tareas repetitivas, peligrosas o de alta precisión en entornos de manufactura, ensamblaje, soldadura, pintura y más. Em esta practica nos enfocaremos en el diseño de trayectorias polares apoyados en el software RobotDK con el objetivo de sentar las bases teóricas y prácticas para la programación offline, simulación y puesta en marcha de movimientos tanto virtuales como reales. Con ello podemos establecer criterios compartivos tanto en los entornos (RoboDK y RobotStudio) como en los manipuladores ­–el Yaskawa Motoman MH6 y el ABB IRB 140– con el fin de concretar las principales fortalezas y aplicaciones de cada herramienta.
 
 ## Comparación técnica entre el Motoman MH6 y el IRB140
 
