@@ -68,6 +68,8 @@ El Motoman MH6 tiene dos posiciones iniciales de referencia definidas: Home1 (Ho
 
 </div>
 ---
+
+
 ## Control Manual del Manipulador: Movimiento Articular y Cartesiano
 
 El **DX100 Teach Pendant** del MH6 permite mover el robot manualmente en diferentes modalidades. En modo articulación (Joint) cada eje del robot se controla individualmente. El pendient tiene teclas dedicadas a cada articulación: por ejemplo, los botones etiquetados **S+ / S-** controlan **J1** (giro en la base), **L+ / L**- controlan **J2** (inclinación del hombro), **U+ / U- J3** (codo), **R+ / R- J4**, **B+ / B- J5**, y **T+ / T- J6**. Al mantener pulsados esos botones (o su equivalente en la pantalla) el robot gira cada eje hacia adelante (+) o atrás (–). Esto permite mover el brazo “articulación por articulación” para posicionarlo. En modo cartesiano (X-Y) los movimientos se definen en coordenadas lineales del espacio o en el sistema de la herramienta. Es decir, los ejes XYZ corresponden a traslaciones del extremo (end-effector) en X, Y y Z, y hay modos adicionales para rotaciones alrededor de X, Y, Z del efector. Se cambia entre modo articulado y cartesiano usando el selector de modo del teach pendant.
