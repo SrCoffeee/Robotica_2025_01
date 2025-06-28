@@ -19,13 +19,12 @@ Los manipuladores industriales son brazos robóticos articulados diseñados para
 | Grados de libertad (DoF)     | 8 ejes                               | 6 ejes                              |
 | Velocidad máxima lineal      | Variable según eje                           | Variable según eje                          |
 | Repetibilidad                | ± 0.08 mm mm                            | ± 0,03 mm                           |
-| Peso del manipulador         | 130 kg                                | 95 kg                              |
+| Peso del manipulador         | 130 kg                                | 98 kg                              |
 | Controlador | DX100 | IRC5 |
 | Aplicaciones típicas         | Pick & place de componentes ligeros, embalaje, inspección | Montajes de ensamblaje pequeños, pick & place, handling, Drawing          |
 
 > [!NOTE] 
-> - Aunque ambos comparten 6 kg de carga, el IRB 140 ofrece mayor alcance y velocidad lineal, a costa de un peso mucho mayor.
-> - El MH6 es más compacto y ligero, ideal en estaciones de mesas de trabajo con limitación de espacio.  
+> - Aunque ambos comparten 6 kg de carga, el MH6 ofrece mayor alcance y velocidad lineal, a costa de un peso mucho mayor.
 
 ---
 
