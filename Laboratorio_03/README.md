@@ -80,6 +80,7 @@ El **DX100 Teach Pendant** del MH6 permite mover el robot manualmente en diferen
 ![Teach_pendant](Imágenes/Tech_Pendant.jpg)
 
 </div>
+
 El control **DX100 del MH6** permite ajustar la velocidad manual en que se mueven los ejes. Hay 3 niveles definidos: Low (bajo), Medium (medio) y High (alto). Estos niveles se seleccionan con las teclas de velocidad en el teach pendant (etiquetadas como SLOW, FAST y High Spped). El operador puede, por ejemplo, presionar “FAST” para aumentar un nivel o “SLOW” para disminuirlo.
 
 ---
