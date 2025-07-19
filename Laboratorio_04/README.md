@@ -21,7 +21,7 @@ Seleccionar una de las cinco configuraciones articulares dadas.
 Mostrar en pantalla los valores reales de cada articulación.
 
 
-## Diagrama de flujo de acciones del robot unsando la herramieenta Mermaid
+## Diagrama de flujo de acciones del robot unsando la herramienta Mermaid
 
 
 
