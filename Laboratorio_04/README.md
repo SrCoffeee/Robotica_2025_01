@@ -6,11 +6,11 @@
 ---
 
 ## Introducción 
-El presente laboratorio tiene como objetivo implementar la cinemática directa del manipulador Phantom X Pincher utilizando herramientas de programación en Python y el framework ROS 2. La práctica se centra en la configuración y control de los servomotores Dynamixel AX-12 mediante joint controllers y tópicos de ROS, así como la visualización y verificación de movimientos articulares a través de una interfaz gráfica de usuario. Este proyecto combina la robótica física con la representación gráfica, permitiendo al estudiante consolidar conocimientos sobre modelado cinemático, control en tiempo real y desarrollo de interfaces HMI. 
+El presente laboratorio tiene como objetivo implementar la cinemática directa del manipulador Phantom X Pincher utilizando herramientas de programación en Python y el framework ROS 2. La práctica se centra en la configuración y control de los servomotores Dynamixel AX-12 mediante joint controllers y tópicos de ROS, así como la visualización y verificación de movimientos articulares a través de una interfaz gráfica de usuario. Este proyecto combina la robótica física con la representación gráfica, permitiendo al estudiante consolidar conocimientos sobre modelado cinemático, control en tiempo real y desarrollo de interfaces HMI.
 
 <div align="center">
 
-![intro](/Imagenes/pincher.jpeg)
+![intro](/Imagenes/Imagen_pincher.jpeg)
 
 </div>
 
@@ -42,7 +42,7 @@ La solución planteada para este laboratorio se divide en dos componentes princi
 
 <div align="center">
 
-![flujo](/Imagenes/diagrama_flujo.png)
+![flujo](/Imagenes/diagrama_de_flujo.png)
 
 </div>
 
