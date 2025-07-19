@@ -10,7 +10,7 @@ El presente laboratorio tiene como objetivo implementar la cinemática directa d
 
 <div align="center">
 
-![intro](/Imagenes/Imagen_pincher.jpeg)
+![intro](/Imagenes/Imagen_pincher.jpg)
 
 </div>
 
@@ -42,7 +42,7 @@ La solución planteada para este laboratorio se divide en dos componentes princi
 
 <div align="center">
 
-![flujo](/Imagenes/diagrama_de_flujo.png)
+![flujo](/Imagenes/diagrama_de_flujo.jpg)
 
 </div>
 
