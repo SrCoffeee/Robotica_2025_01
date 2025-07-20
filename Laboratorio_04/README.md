@@ -49,13 +49,13 @@ La solución planteada para este laboratorio se divide en dos componentes princi
 
 
 ## Plano de planta de la ubicación de cada uno de los elementos.
-![intro](Imagenes\Vistadeplanta.jpg)
+![Vistadeplanta3](Imagenes/Vistadeplanta3.jpg)
 
 
-![intro](Imagenes\Vistadeplanta2.jpg)
+![Vistadeplanta2](Imagenes\Vistadeplanta2.jpg)
 
 
-![intro](Imagenes\Vistadeplanta3.jpg)
+![Vistadeplanta3](Imagenes\Vistadeplanta3.jpg)
 
 
 ## Descripción de las funciones utilizadas.
