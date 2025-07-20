@@ -25,23 +25,29 @@ Cabe aclarar que en la articulación 2 el 0 es con el robot inclinado horizontal
 
 Posición 1
 1. 0, 0, 0, 0, 0.
+   
 ![DH](Imagenes/Home.png)
 
 Posición 2
 2. 25, 25, 20, -20, 0.
-![DH](Imagenes/POS1.png)
+
+![DH](Imagenes/POS2.png)
 
 Posición 3
 3. -35,35, -30, 30, 0.
-![DH](Imagenes/POS2.png)
+
+![DH](Imagenes/POS3.png)
 
 Posición 4
 4. 85, -20, 55, 25, 0.
+
 ![DH](Imagenes/POS4.png)
 
 Posición 5
+
 5. 80, -35, 55, -45, 0.
-![DH](Imagenes/POS6.png)
+
+![DH](Imagenes/POS5.png)
 
 ## Descripción detallada de la solución planteada.
 
