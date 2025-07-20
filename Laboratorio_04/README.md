@@ -16,6 +16,33 @@ El presente laboratorio tiene como objetivo implementar la cinemática directa d
 
 ## Cinemática directa del Phantom X Pincher
 
+A continuación se presenta la tabla de parametros DH del robot 
+
+![DH](Imagenes/DH.png)
+
+El código de MATLAB usado para representar el robot con la herramienta rvc de Peter Corke se encuentra en la carpeta *"Códigos"*. como mdl_phantomx.m
+Cabe aclarar que en la articulación 2 el 0 es con el robot inclinado horizontal y no completamente vertical (HOME) y que para recrear las posiciones se tuvo en cuenta este detalle y funciona bien
+
+Posición 1
+1. 0, 0, 0, 0, 0.
+![DH](Imagenes/Home.png)
+
+Posición 2
+2. 25, 25, 20, -20, 0.
+![DH](Imagenes/POS1.png)
+
+Posición 3
+3. -35,35, -30, 30, 0.
+![DH](Imagenes/POS2.png)
+
+Posición 4
+4. 85, -20, 55, 25, 0.
+![DH](Imagenes/POS4.png)
+
+Posición 5
+5. 80, -35, 55, -45, 0.
+![DH](Imagenes/POS6.png)
+
 ## Descripción detallada de la solución planteada.
 
 La solución planteada para este laboratorio se divide en dos componentes principales: el control de los servomotores del manipulador Phantom X Pincher y la interfaz gráfica de usuario (GUI) para la interacción con el robot. 
@@ -49,6 +76,8 @@ La solución planteada para este laboratorio se divide en dos componentes princi
 
 
 ## Plano de planta de la ubicación de cada uno de los elementos.
+
+Se presenta el plano de planta de lo selementos y unas vistas que detalllan más información del robot 
 ![Vistadeplanta3](Imagenes/Vistadeplanta.png)
 
 
