@@ -9,6 +9,10 @@
 ## Introducción
 El presente proyecto final de robótica industrial se enfoca en automatizar el proceso de preparación de arepas —tradicionalmente manual— mediante un sistema robotizado que garantice una cocción uniforme y precisa de cada unidad. El sistema integra además sistemas electro-neumáticos para el accionamiento del gripper, garantizando control preciso durante todo el proceso. Para la interacción con el operador se implementa una interfaz humano-máquina (HMI) gráfica en el FlexPendant mediante ScreenMaker de RobotStudio, que permite seleccionar la arepa deseada y reportar el estado del proceso. A su vez, se emplea el software de simulación RobotStudio para modelar y probar virtualmente el sistema completo, facilitando las etapas de diseño y validación sin riesgo físico.
 
+## Descripción de la solución creada
+##  Diagrama de flujo de las acciones del robot
+##  Descripción, planos y fotografías del gripper diseñado y sus piezas 
+##  Modelo en Software de Simulación
 ## Códigos
 
 Para este apartado se puede encontrar el código utilizado en la carpeta *"Códigos"*.
