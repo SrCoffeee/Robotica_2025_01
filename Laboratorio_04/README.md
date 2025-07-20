@@ -49,7 +49,7 @@ La solución planteada para este laboratorio se divide en dos componentes princi
 
 
 ## Plano de planta de la ubicación de cada uno de los elementos.
-![Vistadeplanta3](Imagenes/Vistadeplanta3.png)
+![Vistadeplanta3](Imagenes/Vistadeplanta.png)
 
 
 ![Vistadeplanta2](Imagenes/Vistadeplanta2.png)
