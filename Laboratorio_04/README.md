@@ -10,7 +10,7 @@ El presente laboratorio tiene como objetivo implementar la cinemática directa d
 
 <div align="center">
 
-![intro](Imagenes\Imagen_pincher.jpg)
+![intro](Imagenes/Imagen_pincher.jpg)
 
 </div>
 
@@ -49,13 +49,13 @@ La solución planteada para este laboratorio se divide en dos componentes princi
 
 
 ## Plano de planta de la ubicación de cada uno de los elementos.
+![Vistadeplanta3](Imagenes/Vistadeplanta.jpg)
+
+
+![Vistadeplanta2](Imagenes/Vistadeplanta2.jpg)
+
+
 ![Vistadeplanta3](Imagenes/Vistadeplanta3.jpg)
-
-
-![Vistadeplanta2](Imagenes\Vistadeplanta2.jpg)
-
-
-![Vistadeplanta3](Imagenes\Vistadeplanta3.jpg)
 
 
 ## Descripción de las funciones utilizadas.
