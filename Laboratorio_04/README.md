@@ -52,11 +52,10 @@ La solución planteada para este laboratorio se divide en dos componentes princi
 ![Vistadeplanta3](Imagenes/Vistadeplanta3.png)
 
 
-![Vistadeplanta2](Imagenes\Vistadeplanta2.png)
+![Vistadeplanta2](Imagenes/Vistadeplanta2.png)
 
 
-![Vistadeplanta3](Imagenes\Vistadeplanta3.png)
-
+![Vistadeplanta3](Imagenes/Vistadeplanta3.png)
 
 ## Descripción de las funciones utilizadas.
 
