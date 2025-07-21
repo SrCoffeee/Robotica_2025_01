@@ -18,36 +18,54 @@ El presente laboratorio tiene como objetivo implementar la cinemática directa d
 
 A continuación se presenta la tabla de parametros DH del robot 
 
+<div align="center">
+   
 ![DH](Imagenes/DH.png)
+
+</div>
 
 El código de MATLAB usado para representar el robot con la herramienta rvc de Peter Corke se encuentra en la carpeta *"Códigos"*. como mdl_phantomx.m
 Cabe aclarar que en la articulación 2 el 0 es con el robot inclinado horizontal y no completamente vertical (HOME) y que para recrear las posiciones se tuvo en cuenta este detalle y funciona bien
 
-Posición 1
-1. 0, 0, 0, 0, 0.
+- Posición 1: **0, 0, 0, 0, 0.**
    
+ <div align="center">  
+    
 ![DH](Imagenes/Home.png)
 
-Posición 2
-2. 25, 25, 20, -20, 0.
+</div>
 
+- Posición 2: **25, 25, 20, -20, 0.**
+
+<div align="center">
+   
 ![DH](Imagenes/POS2.png)
 
-Posición 3
-3. -35,35, -30, 30, 0.
+</div>
 
+- Posición 3: **-35,35, -30, 30, 0.**
+
+<div align="center">
+   
 ![DH](Imagenes/POS3.png)
 
-Posición 4
-4. 85, -20, 55, 25, 0.
+</div>
 
+- Posición 4: **85, -20, 55, 25, 0.**
+
+<div align="center">
+   
 ![DH](Imagenes/POS4.png)
 
-Posición 5
+</div>
 
-5. 80, -35, 55, -45, 0.
+- Posición 5: **80, -35, 55, -45, 0.**
 
+<div align="center">
+   
 ![DH](Imagenes/POS5.png)
+
+</div>
 
 ## Descripción detallada de la solución planteada.
 
@@ -84,6 +102,9 @@ La solución planteada para este laboratorio se divide en dos componentes princi
 ## Plano de planta de la ubicación de cada uno de los elementos.
 
 Se presenta el plano de planta de lo selementos y unas vistas que detalllan más información del robot 
+
+<div align="center">
+   
 ![Vistadeplanta3](Imagenes/Vistadeplanta.png)
 
 
@@ -91,6 +112,9 @@ Se presenta el plano de planta de lo selementos y unas vistas que detalllan más
 
 
 ![Vistadeplanta3](Imagenes/Vistadeplanta3.png)
+
+
+</div>
 
 ## Descripción de las funciones utilizadas.
 
