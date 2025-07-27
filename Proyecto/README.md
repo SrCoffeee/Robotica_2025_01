@@ -76,7 +76,10 @@ El diseño tiene una forma semicircular que ayuda a guiar la arepa al centro, fa
 
  **Gripper y soporte impreso**
 
-![Uploading WhatsApp Image 2025-07-27 at 5.58.11 PM.jpeg…]()
+ <p align="center"> <img width="600" alt="soporte" src="![Imagengripper](https://github.com/user-attachments/assets/122234d8-f1ef-4bf8-828f-64e8bfe5d7ca)" /> </p>
+ 
+
+
 
 
 ### Planos
