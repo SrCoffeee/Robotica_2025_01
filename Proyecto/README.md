@@ -74,6 +74,11 @@ El diseño tiene una forma semicircular que ayuda a guiar la arepa al centro, fa
  **Soporte**
 <p align="center"> <img width="600" alt="soporte" src="https://github.com/user-attachments/assets/e96b81f1-2683-4577-bac9-7c68946c607e" /> </p>
 
+ **Gripper y soporte impreso**
+
+![Uploading WhatsApp Image 2025-07-27 at 5.58.11 PM.jpeg…]()
+
+
 ### Planos
 
 Los siguientes archivos PDF contienen los planos detallados de las piezas modeladas:
