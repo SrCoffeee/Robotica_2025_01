@@ -54,6 +54,33 @@ El presente proyecto final de robótica industrial se enfoca en automatizar el p
 
 ##  Diagrama de flujo de las acciones del robot
 ##  Descripción, planos y fotografías del gripper diseñado y sus piezas 
+Este gripper fue diseñado para manipular arepas dentro de un sistema automatizado, pensando en recogerlas con cuidado y permitir su volteo en el proceso. Está adaptado para acoplarse al robot ABB y funcionar con una pinza neumática MCHA-20, que activa el movimiento de los dedos.
+
+El diseño tiene una forma semicircular que ayuda a guiar la arepa al centro, facilitando tanto el agarre como el giro. También incluye una base tipo espátula que permite deslizarse por debajo sin dañar el producto.
+
+### Piezas diseñadas
+- **Dedos de agarre adaptadores:**  Extensiones que se conectan a la pinza MCHA-20 y transmiten el movimiento hacia la estructura del gripper.
+
+- **Estructura semicircular de guía:**  Dos paredes curvas que centran la arepa y la sostienen durante el agarre y traslado.
+
+- **Base inferior:** Superficie plana que entra por debajo de la arepa para facilitar la recolección y volteo.
+
+- **Soporte de unión al robot:** Pieza que permite acoplar el gripper al flange del brazo robótico.
+
+### Imágenes del diseño
+#### Gripper
+<p align="center"> <img width="600" alt="gripper" src="https://github.com/user-attachments/assets/a7544f12-8aba-40e7-80de-cebc4078e960" /> </p> 
+
+ **Soporte**
+<p align="center"> <img width="600" alt="soporte" src="https://github.com/user-attachments/assets/e96b81f1-2683-4577-bac9-7c68946c607e" /> </p>
+
+### Planos
+
+Los siguientes archivos PDF contienen los planos detallados de las piezas modeladas:
+
+- [Plano del adaptador](./Planos/Plano%20Adaptador.pdf)  
+- [Plano del gripper](./Planos/Plano%20Gripper.pdf)
+
 ##  Modelo en Software de Simulación
 ## Códigos
 
