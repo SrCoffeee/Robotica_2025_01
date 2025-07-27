@@ -81,7 +81,6 @@ Los siguientes archivos PDF contienen los planos detallados de las piezas modela
 - [Plano del adaptador](./Planos/Plano%20Adaptador.pdf)  
 - [Plano del gripper](./Planos/Plano%20Gripper.pdf)
 
-##  Modelo en Software de Simulación
 ## Códigos
 
 Para este apartado se puede encontrar el código utilizado en la carpeta *"Códigos"*.
