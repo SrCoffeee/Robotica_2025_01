@@ -79,7 +79,7 @@ El diseño tiene una forma semicircular que ayuda a guiar la arepa al centro, fa
  ![Imagengripper](https://github.com/user-attachments/assets/122234d8-f1ef-4bf8-828f-64e8bfe5d7ca)
  
 
- <p align="center"> <img width="600" alt="soporte" src="![Imagengripper](https://github.com/user-attachments/assets/122234d8-f1ef-4bf8-828f-64e8bfe5d7ca)" /> </p>
+ <p align="center"> <img width="600" alt="soporte" src="[Imagengripper](https://github.com/user-attachments/assets/122234d8-f1ef-4bf8-828f-64e8bfe5d7ca)" /> </p>
  
 
 
