@@ -1,0 +1,127 @@
+MODULE Module1
+        TASK PERS wobjdata woarepa:=[FALSE,TRUE,"",[[0,0,0],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
+    CONST robtarget home:=[[691.263067,0,567.863889],[0.500000001,0,0.866025403,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget precogida:=[[230,594,480],[0.5,-0.5,0.5,0.5],[0,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget cogida:=[[230,694,480],[0.5,-0.5,0.5,0.5],[0,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget precocina:=[[30,594,480],[0.5,-0.5,0.5,0.5],[0,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget cocina:=[[30,694,480],[0.5,-0.5,0.5,0.5],[0,-1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget precocina_2_volteado:=[[30,594,505],[0.5,-0.5,-0.5,-0.5],[0,-1,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget cocina_2_volteado:=[[30,694,505],[0.5,-0.5,-0.5,-0.5],[0,-1,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget predejada:=[[-170,594,480],[0.5,-0.5,0.5,0.5],[1,0,-1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget dejada:=[[-170,694,480],[0.5,-0.5,0.5,0.5],[1,0,-1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    PERS tooldata pinza1:=[TRUE,[[4.194,0,216.008],[1,0,0,0]],[1,[4.194,0,138.378],[1,0,0,0],2,2,1]];
+!***********************************************************
+    !
+    ! M?dulo:  Module1
+    !
+    ! Descripción:
+    !   <Introduzca la descripción aquí>
+    !
+    ! Autor: david
+    !
+    ! Versión: 1.0
+    !
+    !***********************************************************
+    
+    
+    !***********************************************************
+    !
+    ! Procedimiento Main
+    !
+    !   Este es el punto de entrada de su programa
+    !
+    !***********************************************************
+    PROC main()
+        
+        
+        WHILE TRUE DO
+        
+        IF DI_01 = 1 THEN
+        
+            recogerydejarestufa;
+            voltear;        
+            fincocinaydejado;    
+            
+        ENDIF              
+        
+        ENDWHILE
+        
+    ENDPROC
+    PROC recogerydejarestufa()
+        Reset DO_04;!ENTRADAS APAGADAS
+        Reset DO_05;
+        
+        MoveJ home,v300,fine,pinza1\WObj:=woarepa;
+        MoveJ precogida,v300,fine,pinza1\WObj:=woarepa;          
+              
+        MoveJ cogida,v300,fine,pinza1\WObj:=woarepa;
+       
+        Reset DO_04;
+        Set DO_05;  !SetDO electrovalvulapinza,1; CERRAR
+        WaitTime 1;                                   
+        
+       
+        MoveJ precogida,v300,fine,pinza1\WObj:=woarepa;
+        MoveJ precocina,v300,fine,pinza1\WObj:=woarepa;
+        MoveJ cocina,v300,fine,pinza1\WObj:=woarepa;
+        Reset DO_05;
+        Set DO_04;     !SetDO electrovalvulapinza,0; ABRIR
+        WaitTime 1;
+        
+        
+        MoveJ precocina,v300,fine,pinza1\WObj:=woarepa;
+        MoveJ home,v300,fine,pinza1\WObj:=woarepa;
+    ENDPROC
+    PROC voltear()
+        MoveJ home,v300,fine,pinza1\WObj:=woarepa;
+        MoveJ precocina,v300,fine,pinza1\WObj:=woarepa;
+        
+        WaitTime 1;
+        MoveJ cocina,v300,fine,pinza1\WObj:=woarepa;
+        Reset DO_04;       
+        Set DO_05;  !SetDO electrovalvulapinza,1; CERRAR
+        WaitTime 1;
+        
+        
+        MoveJ precocina,v300,fine,pinza1\WObj:=woarepa;
+        MoveJ precocina_2_volteado,v300,fine,pinza1\WObj:=woarepa;
+        
+        
+        MoveJ cocina_2_volteado,v300,fine,pinza1\WObj:=woarepa;
+        WaitTime 1;
+        Reset DO_05; 
+        Set DO_04; !SetDO electrovalvulapinza,0; ABRIR
+        WaitTime 1;
+               
+        MoveJ precocina_2_volteado,v300,fine,pinza1\WObj:=woarepa;
+        
+        
+        MoveJ home,v300,fine,pinza1\WObj:=woarepa;
+        
+    ENDPROC
+    PROC fincocinaydejado()
+        MoveJ home,v300,fine,pinza1\WObj:=woarepa;
+        MoveJ precocina,v300,fine,pinza1\WObj:=woarepa;
+        MoveJ cocina,v300,fine,pinza1\WObj:=woarepa;
+        WaitTime 1;
+        
+        Reset DO_04;
+        Set DO_05; !SetDO electrovalvulapinza,1;
+        WaitTime 1;
+        
+      
+        MoveJ precocina,v300,fine,pinza1\WObj:=woarepa;
+        MoveJ predejada,v300,fine,pinza1\WObj:=woarepa;
+        MoveJ dejada,v300,fine,pinza1\WObj:=woarepa;
+        WaitTime 1;
+
+        Reset DO_05;   
+        Set DO_04;  !SetDO electrovalvulapinza,0;
+        WaitTime 1;
+        
+       
+        MoveJ predejada,v300,fine,pinza1\WObj:=woarepa;
+        MoveJ home,v300,fine,pinza1\WObj:=woarepa;
+        
+    ENDPROC
+ENDMODULE
