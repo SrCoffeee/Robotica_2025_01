@@ -53,6 +53,13 @@ El presente proyecto final de robótica industrial se enfoca en automatizar el p
   - Tornillería M5 y perfiles de aluminio 20×20 mm
 
 ##  Diagrama de flujo de las acciones del robot
+
+<div align="center">
+
+![flujo](/Imágenes/Diagrama_flujo.svg)
+
+</div>
+
 ##  Descripción, planos y fotografías del gripper diseñado y sus piezas 
 Este gripper fue diseñado para manipular arepas dentro de un sistema automatizado, pensando en recogerlas con cuidado y permitir su volteo en el proceso. Está adaptado para acoplarse al robot ABB y funcionar con una pinza neumática MCHA-20, que activa el movimiento de los dedos.
 
@@ -93,5 +100,65 @@ Los siguientes archivos PDF contienen los planos detallados de las piezas modela
 
 Para este apartado se puede encontrar el código utilizado en la carpeta *"Códigos"*.
 
+### Explicación de implementación RAPID
+
+El programa RAPID desarrollado para este proyecto consta de varios procedimientos que controlan las acciones del robot ABB IRB 120. A continuación, se describen los principales aspectos de la implementación:
+
+1. **Definición de datos y configuraciones iniciales:**
+   * Se definen las posiciones clave del robot mediante constantes `robtarget`, como `home`, `precogida`, `cogida`, `precocina`, entre otras. Estas posiciones representan los puntos de inicio, recogida, cocción y entrega de las arepas.
+   * Se configura la herramienta utilizada (`tooldata pinza1`) y el objeto de trabajo (`wobjdata woarepa`).
+
+2. **Estructura del programa principal:**
+   * El procedimiento `main` actúa como punto de entrada y coordina las acciones principales: recoger y dejar la arepa en la estufa (`recogerydejarestufa`), voltear la arepa (`voltear`) y finalizar el proceso (`fincocinaydejado`).
+
+3. **Procedimientos específicos:**
+   * **`recogerydejarestufa`:**
+     * El robot se mueve desde la posición `home` hasta `cogida` para recoger la arepa, activando la pinza neumática para sujetarla.
+     * Luego, transporta la arepa a la posición de cocción (`cocina`) y la suelta.
+   * **`voltear`:**
+     * Este procedimiento permite voltear la arepa para garantizar una cocción uniforme. El robot recoge la arepa, realiza un movimiento de volteo en las posiciones `precocina_2_volteado` y `cocina_2_volteado`, y la suelta nuevamente.
+   * **`fincocinaydejado`:**
+     * Finaliza el proceso recogiendo la arepa cocida y llevándola a la posición de entrega (`dejada`).
+
+4. **Control de la pinza neumática:**
+   * Se utilizan señales digitales (`Set` y `Reset`) para controlar la apertura y cierre de la pinza neumática, asegurando un manejo preciso de las arepas durante todo el proceso.
+
+5. **Movimientos del robot:**
+   * Los movimientos se realizan mediante instrucciones `MoveJ` con velocidades y configuraciones específicas para garantizar precisión y seguridad.
+
+Este programa fue diseñado y probado en RobotStudio, asegurando su correcto funcionamiento antes de la implementación física.
+
+### 6. Implementación de HMI, SmartComponent y Entradas y Salidas Digitales
+
+#### HMI (Interfaz Humano-Máquina)
+
+La HMI fue diseñada utilizando ScreenMaker en RobotStudio para facilitar la interacción del operador con el sistema. Esta interfaz permite seleccionar el tipo de arepa deseada, iniciar el proceso y monitorear el estado del sistema en tiempo real.
+<div align="center">
+
+![HMI](./Imágenes/HMI.png)
+
+</div>
+
+#### SmartComponent
+
+Se utilizó un SmartComponent en RobotStudio para simular el comportamiento del sistema neumático y las señales digitales. Este componente permite validar la lógica de control antes de la implementación física, asegurando que las señales y movimientos sean correctos.
+
+<div align="center">
+
+![SmartComponent](./Imágenes/SmartComponent2.jpg)
+
+</div>
+
+#### Entradas y Salidas Digitales
+
+El sistema emplea señales digitales para controlar las válvulas solenoides y sensores del sistema neumático. Estas señales se configuran en RobotStudio y se conectan al controlador del robot ABB IRB 120.
+
+<div align="center">
+
+![Entradas y Salidas Digitales](./Imágenes/Entradas_y_salidas_digitales.jpg)
+
+</div>
+
 ## Video explicativo
+
 Para un mayor detalle de lo realizado, se puede ver el video de la implementación física [aquí](https://youtu.be/5WKLtGd51os)

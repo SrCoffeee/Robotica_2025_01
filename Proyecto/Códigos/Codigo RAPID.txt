@@ -13,9 +13,7 @@ MODULE Module1
 !***********************************************************
     !
     ! M?dulo:  Module1
-    !
-    ! Descripción:
-    !   <Introduzca la descripción aquí>
+    
     !
     ! Autor: david
     !
@@ -32,20 +30,12 @@ MODULE Module1
     !
     !***********************************************************
     PROC main()
-        
-        
-        WHILE TRUE DO
-        
-        IF DI_01 = 1 THEN
-        
+        WaitDO Inicio,1;
             recogerydejarestufa;
-            voltear;        
+        WaitDO Voltear_Arepa,1;
+            voltear;
+        WaitDO Servir,1;
             fincocinaydejado;    
-            
-        ENDIF              
-        
-        ENDWHILE
-        
     ENDPROC
     PROC recogerydejarestufa()
         Reset DO_04;!ENTRADAS APAGADAS
@@ -57,14 +47,14 @@ MODULE Module1
         MoveJ cogida,v300,fine,pinza1\WObj:=woarepa;
         WaitTime 1;
         Reset DO_04;
-        SetDO electrovalvulapinza,1; 
+        Set DO_05;  !SetDO electrovalvulapinza,1; CERRAR
         WaitTime 1;                                       
         
         MoveJ precogida,v300,fine,pinza1\WObj:=woarepa;
         MoveJ precocina,v300,fine,pinza1\WObj:=woarepa;
         MoveJ cocina,v300,fine,pinza1\WObj:=woarepa;
         Reset DO_05;
-        SetDO electrovalvulapinza,0; 
+        Set DO_04;     !SetDO electrovalvulapinza,0; ABRIR
         WaitTime 1;
         
         MoveJ precocina,v300,fine,pinza1\WObj:=woarepa;
@@ -76,7 +66,7 @@ MODULE Module1
         
         MoveJ cocina,v300,fine,pinza1\WObj:=woarepa;
         Reset DO_04;       
-        SetDO electrovalvulapinza,1; 
+        Set DO_05;  !SetDO electrovalvulapinza,1; CERRAR
         WaitTime 1;
         
         MoveJ precocina,v300,fine,pinza1\WObj:=woarepa;
@@ -86,7 +76,7 @@ MODULE Module1
         MoveJ cocina_2_volteado,v300,fine,pinza1\WObj:=woarepa;
         MoveJ precocina_2_volteado,v300,fine,pinza1\WObj:=woarepa;
         Reset DO_05; 
-        SetDO electrovalvulapinza,0; 
+        Set DO_04; !SetDO electrovalvulapinza,0; ABRIR
         WaitTime 1;
         
         MoveJ home,v300,fine,pinza1\WObj:=woarepa;
@@ -98,7 +88,7 @@ MODULE Module1
         MoveJ cocina,v300,fine,pinza1\WObj:=woarepa;
         
         Reset DO_04;
-        SetDO electrovalvulapinza,1;
+        Set DO_05; !SetDO electrovalvulapinza,1;
         WaitTime 1;
         
         MoveJ precocina,v300,fine,pinza1\WObj:=woarepa;
@@ -106,7 +96,7 @@ MODULE Module1
         MoveJ dejada,v300,fine,pinza1\WObj:=woarepa;
 
         Reset DO_05;   
-        SetDO electrovalvulapinza,0;
+        Set DO_04;  !SetDO electrovalvulapinza,0;
         WaitTime 1; 
         
         MoveJ predejada,v300,fine,pinza1\WObj:=woarepa;
