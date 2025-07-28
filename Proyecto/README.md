@@ -56,7 +56,7 @@ El presente proyecto final de robótica industrial se enfoca en automatizar el p
 
 <div align="center">
 
-![flujo](/Imágenes/Diagrama_flujo.svg)
+![flujo](./Imágenes/Diagrama_flujo.svg)
 
 </div>
 
@@ -128,9 +128,9 @@ El programa RAPID desarrollado para este proyecto consta de varios procedimiento
 
 Este programa fue diseñado y probado en RobotStudio, asegurando su correcto funcionamiento antes de la implementación física.
 
-### 6. Implementación de HMI, SmartComponent y Entradas y Salidas Digitales
+## Implementación de HMI, SmartComponent y Entradas y Salidas Digitales
 
-#### HMI (Interfaz Humano-Máquina)
+### HMI (Interfaz Humano-Máquina)
 
 La HMI fue diseñada utilizando ScreenMaker en RobotStudio para facilitar la interacción del operador con el sistema. Esta interfaz permite seleccionar el tipo de arepa deseada, iniciar el proceso y monitorear el estado del sistema en tiempo real.
 <div align="center">
@@ -139,7 +139,7 @@ La HMI fue diseñada utilizando ScreenMaker en RobotStudio para facilitar la int
 
 </div>
 
-#### SmartComponent
+### SmartComponent
 
 Se utilizó un SmartComponent en RobotStudio para simular el comportamiento del sistema neumático y las señales digitales. Este componente permite validar la lógica de control antes de la implementación física, asegurando que las señales y movimientos sean correctos.
 
@@ -149,7 +149,7 @@ Se utilizó un SmartComponent en RobotStudio para simular el comportamiento del 
 
 </div>
 
-#### Entradas y Salidas Digitales
+### Entradas y Salidas Digitales
 
 El sistema emplea señales digitales para controlar las válvulas solenoides y sensores del sistema neumático. Estas señales se configuran en RobotStudio y se conectan al controlador del robot ABB IRB 120.
 
