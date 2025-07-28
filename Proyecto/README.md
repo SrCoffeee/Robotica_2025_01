@@ -55,7 +55,7 @@ El presente proyecto final de robótica industrial se enfoca en automatizar el p
 ##  Diagrama de flujo de las acciones del robot
 
 <div align="center">
-  <img src="./Imágenes/Diagrama_flujo.svg" alt="700" width="300"/>
+  <img src="./Imágenes/Diagrama_flujo.svg" alt="700" width="200"/>
 </div>
 
 ##  Descripción, planos y fotografías del gripper diseñado y sus piezas 
