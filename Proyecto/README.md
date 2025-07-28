@@ -159,4 +159,4 @@ El sistema emplea señales digitales para controlar las válvulas solenoides y s
 
 ## Video explicativo
 
-Para un mayor detalle de lo realizado, se puede ver el video de la implementación física [aquí](https://youtu.be/5WKLtGd51os)
+Para un mayor detalle de lo realizado, se puede ver el video de la implementación física [aquí](https://youtu.be/WRQasN-3m1E)
